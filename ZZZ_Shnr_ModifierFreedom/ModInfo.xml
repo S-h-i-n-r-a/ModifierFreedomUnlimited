@@ -13,12 +13,11 @@
 -->
 
 <xml>
-	<ModInfo>
-		<Name value="Shinra's item mod freedom UNLIMITED" />
-		<Description value="Modifies the in-game item/vehicle mod system to allow for absolute, unlimited freedom." />
-		<Version value="1.0.20240118" />
-		
-		<Author value="Shinra" />
-		<Website value="https://github.com/S-h-i-n-r-a" />
-	</ModInfo>
+	<Name value="SHNR_ItemModFreedomUnlimited" />
+	<DisplayName value="Shinra's item mod freedom UNLIMITED" />
+	<Description value="Modifies the in-game item/vehicle mod system to allow for absolute, unlimited freedom." />
+	<Version value="1.0.20240118" />
+
+	<Author value="Shinra" />
+	<Website value="https://github.com/S-h-i-n-r-a" />
 </xml>
