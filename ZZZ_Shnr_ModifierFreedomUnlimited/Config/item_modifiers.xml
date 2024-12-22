@@ -3,412 +3,474 @@
 <!-- 
 	This file edits the tags on a per-item basis.
 	Tags are edited to:
-	1. Make them more broadly usable.
+	1. Make them usable anywhere.
 	2. Make them usable in conjunction with others.
+	3. Break the game, without a doubt.
 
-	Note - when attempting to attach mod to item the game checks:
+	Note - when attempting to attach mod to an item the game checks:
 	-installable tag of item matches one of the modifier's tags
 	-blocked tags of item do not contain any of the modifier's tags
 	-item does not already have an attachment with the same tag(s)
---> 
+-->
 
 <configs>
-<!-- Guns -->
 
-	<!-- Barrel Extender -->
+	<!-- modGunBarrelExtender -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/@modifier_tags">modGunBarrelExtender</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/@blocked_tags">noMods</set>
-	
-	<!-- Muzzle Brake -->
+
+	<!-- modGunMuzzleBrake -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/@modifier_tags">modGunMuzzleBrake</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/@blocked_tags">noMods</set>
-	
-	<!-- Suppressor -->
+
+	<!-- modGunSoundSuppressorSilencer -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/@modifier_tags">modGunSoundSuppressorSilencer</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/@blocked_tags">noMods</set>
-	
-	<!-- Laser Sight -->
+
+	<!-- modGunLaserSight -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/@modifier_tags">modGunLaserSight</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/@blocked_tags">noMods</set>
-	
-	<!-- Weapon Flashlight -->
+
+	<!-- modGunFlashlight -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/@modifier_tags">modGunFlashlight</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/@blocked_tags">noMods</set>
-	
-	<!-- Scope x2 -->
+
+	<!-- modGunScopeSmall -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/@modifier_tags">scope</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/@modifier_tags">modGunScopeSmall</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/@blocked_tags">noMods</set>
-	
-	<!-- Scope x4 -->
+
+	<!-- modGunScopeMedium -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/@modifier_tags">scope</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/@modifier_tags">modGunScopeMedium</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/@blocked_tags">noMods</set>
-	
-	<!-- Scope x8 -->
+
+	<!-- modGunScopeLarge -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/@modifier_tags">scope</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/@modifier_tags">modGunScopeLarge</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/@blocked_tags">noMods</set>
-	
-	<!-- Reflex Sight -->
+
+	<!-- modGunReflexSight -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/@modifier_tags">scope</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/@modifier_tags">modGunReflexSight</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/@blocked_tags">noMods</set>
-	
-	<!-- Semi Trigger -->
+
+	<!-- modGunTriggerGroupSemi -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupSemi']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupSemi']/@modifier_tags">modGunTriggerGroupSemi</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupSemi']/@blocked_tags">noMods</set>
-	
-	<!-- Burst Trigger -->
+
+	<!-- modGunTriggerGroupBurst3 -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupBurst3']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupBurst3']/@modifier_tags">modGunTriggerGroupBurst3</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupBurst3']/@blocked_tags">noMods</set>
-	
-	<!-- Auto Trigger -->
+
+	<!-- modGunTriggerGroupAutomatic -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupAutomatic']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupAutomatic']/@modifier_tags">modGunTriggerGroupAutomatic</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupAutomatic']/@blocked_tags">noMods</set>
-	
-	<!-- Bipod -->
+
+	<!-- modGunBipod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBipod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBipod']/@modifier_tags">modGunBipod</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBipod']/@blocked_tags">noMods</set>
-	
-	<!-- Foregrip -->
+
+	<!-- modGunForegrip -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/@modifier_tags">modGunForegrip</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/@blocked_tags">noMods</set>
-	
-	<!-- Retracting Stock -->
+
+	<!-- modGunRetractingStock -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']/@modifier_tags">modGunRetractingStock</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']/@blocked_tags">noMods</set>
-	
-	<!-- Sawed-off Barrel -->
+
+	<!-- modGunFoldingStock -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunFoldingStock']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunFoldingStock']/@modifier_tags">modGunFoldingStock</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunFoldingStock']/@blocked_tags">noMods</set>
+
+	<!-- modShotgunSawedOffBarrel -->
 	<set xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel']/@modifier_tags">modShotgunSawedOffBarrel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel']/@blocked_tags">noMods</set>
-	
-	<!-- Shotgun Duckbill -->
+
+	<!-- modGunDuckbill -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunDuckbill']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunDuckbill']/@modifier_tags">modGunDuckbill</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunDuckbill']/@blocked_tags">noMods</set>
-	
-	<!-- Shotgun Choke -->
+
+	<!-- modGunChoke -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunChoke']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunChoke']/@modifier_tags">modGunChoke</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunChoke']/@blocked_tags">noMods</set>
-	
-	<!-- Magazine Extender -->
+
+	<!-- modGunMagazineExtender -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']/@modifier_tags">modGunMagazineExtender</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']/@blocked_tags">noMods</set>
-	
-	<!-- Drum Magazine -->
+
+	<!-- modGunDrumMagazineExtender -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']/@modifier_tags">modGunDrumMagazineExtender</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']/@blocked_tags">noMods</set>
-	
-	<!-- Cripple 'Em -->
+
+	<!-- modGunShotgunTubeExtenderMagazine -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunShotgunTubeExtenderMagazine']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunShotgunTubeExtenderMagazine']/@modifier_tags">modGunShotgunTubeExtenderMagazine</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunShotgunTubeExtenderMagazine']/@blocked_tags">noMods</set>
+
+	<!-- modGunCrippleEm -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunCrippleEm']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunCrippleEm']/@modifier_tags">modGunCrippleEm</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunCrippleEm']/@blocked_tags">noMods</set>
-	
-<!-- Bow, Crossbow -->	
-	
-	<!-- Polymer Bowstring -->
+
+	<!-- modGunBowPolymerString -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBowPolymerString']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBowPolymerString']/@modifier_tags">modGunBowPolymerString</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBowPolymerString']/@blocked_tags">noMods</set>
-	
-	<!-- Arrow Rest -->
+
+	<!-- modGunBowArrowRest -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBowArrowRest']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBowArrowRest']/@modifier_tags">modGunBowArrowRest</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBowArrowRest']/@blocked_tags">noMods</set>
-	
-<!-- misc -->	
-	
-	<!-- The Hunter -->
+
+	<!-- modGunMeleeTheHunter -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeTheHunter']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeTheHunter']/@modifier_tags">modGunMeleeTheHunter</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeTheHunter']/@blocked_tags">noMods</set>
-	
-	<!-- Rad Remover -->
+
+	<!-- modGunMeleeRadRemover -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeRadRemover']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeRadRemover']/@modifier_tags">modGunMeleeRadRemover</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeRadRemover']/@blocked_tags">noMods</set>
-	
-	<!-- Blessed Metal -->
-	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeBlessedMetal']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeBlessedMetal']/@modifier_tags">modGunMeleeBlessedMetal</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeBlessedMetal']/@blocked_tags">noMods</set>
-	
-<!-- Melee -->	
-	
-	<!-- Tempered Blade -->
+
+	<!-- modMeleeTemperedBlade -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@modifier_tags">modMeleeTemperedBlade</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@blocked_tags">noMods</set>
-	
-	<!-- Serrated Blade -->
+
+	<!-- modMeleeSerratedBlade -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeSerratedBlade']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeSerratedBlade']/@modifier_tags">modMeleeSerratedBlade</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeSerratedBlade']/@blocked_tags">noMods</set>
-	
-	<!-- Weighted Head -->
+
+	<!-- modMeleeWeightedHead -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@modifier_tags">modMeleeWeightedHead</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@blocked_tags">noMods</set>
-	
-	<!-- Structural Brace -->
+
+	<!-- modMeleeStructuralBrace -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']/@modifier_tags">modMeleeStructuralBrace</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']/@blocked_tags">noMods</set>
-	
-	<!-- Ergonomic Grip -->
+
+	<!-- modMeleeErgonomicGrip -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeErgonomicGrip']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeErgonomicGrip']/@modifier_tags">modMeleeErgonomicGrip</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeErgonomicGrip']/@blocked_tags">noMods</set>
-	
-	<!-- Fortifying Grip -->
+
+	<!-- modMeleeFortifyingGrip -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFortifyingGrip']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFortifyingGrip']/@modifier_tags">modMeleeFortifyingGrip</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFortifyingGrip']/@blocked_tags">noMods</set>
-	
-	<!-- Barbed Wire -->
+
+	<!-- modMeleeClubBarbedWire -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']/@modifier_tags">modMeleeClubBarbedWire</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']/@blocked_tags">noMods</set>
-	
-	<!-- Metal Spikes -->
+
+	<!-- modMeleeClubMetalSpikes -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']/@modifier_tags">modMeleeClubMetalSpikes</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']/@blocked_tags">noMods</set>
-	
-	<!-- Metal Chain -->
+
+	<!-- modMeleeClubMetalChain -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalChain']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalChain']/@modifier_tags">modMeleeClubMetalChain</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalChain']/@blocked_tags">noMods</set>
-	
-	<!-- Burning Shaft -->
+
+	<!-- modMeleeClubBurningShaft -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/@modifier_tags">modMeleeClubBurningShaft</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/@blocked_tags">noMods</set>
-	
-	<!-- Fireman's Axe -->
+
+	<!-- modMeleeFiremansAxeMod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/@modifier_tags">modMeleeFiremansAxeMod</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/@blocked_tags">noMods</set>
-	
-	<!-- Grave Digger -->
+
+	<!-- modMeleeGraveDigger -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']/@modifier_tags">modMeleeGraveDigger</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']/@blocked_tags">noMods</set>
-	
-	<!-- Bunker Buster -->
+
+	<!-- modMeleeBunkerBuster -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']/@modifier_tags">modMeleeBunkerBuster</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']/@blocked_tags">noMods</set>
-	
-	<!-- Iron Breaker -->
+
+	<!-- modMeleeIronBreaker -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']/@modifier_tags">modMeleeIronBreaker</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']/@blocked_tags">noMods</set>
-	
-	<!-- Wood Splitter -->
+
+	<!-- modMeleeWoodSplitter -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']/@modifier_tags">modMeleeWoodSplitter</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']/@blocked_tags">noMods</set>
-	
-	<!-- Diamond Tip -->
+
+	<!-- modMeleeDiamondTip -->
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']/@modifier_tags">modMeleeDiamondTip</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']/@blocked_tags">noMods</set>
-	
-<!-- Machines -->
-	
-	<!-- Fuel Tank Small -->
+
+	<!-- modMeleeStunBatonRepulsor -->
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStunBatonRepulsor']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStunBatonRepulsor']/@modifier_tags">modMeleeStunBatonRepulsor</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStunBatonRepulsor']/@blocked_tags">noMods</set>
+
+	<!-- modFuelTankSmall -->
 	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankSmall']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankSmall']/@modifier_tags">modFuelTankSmall</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankSmall']/@blocked_tags">noMods</set>
-	
-	<!-- Fuel Tank Large -->
+
+	<!-- modFuelTankLarge -->
 	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']/@modifier_tags">modFuelTankLarge</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']/@blocked_tags">noMods</set>
-	
-<!-- Armour -->
-	
-	<!-- Ammo Bandolier -->
+
+	<!-- modArmorBandolier -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorBandolier']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorBandolier']/@modifier_tags">modArmorBandolier</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorBandolier']/@blocked_tags">noMods</set>
-	
-	<!-- Radiation Ready -->
+
+	<!-- modRadiationReady -->
 	<set xpath="/item_modifiers/item_modifier[@name='modRadiationReady']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRadiationReady']/@modifier_tags">modRadiationReady</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRadiationReady']/@blocked_tags">noMods</set>
-	
-	<!-- Insulated Liner -->
+
+	<!-- modArmorInsulatedLiner -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLiner']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLiner']/@modifier_tags">modArmorInsulatedLiner</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLiner']/@blocked_tags">noMods</set>
-	
-	<!-- Cooling Mesh -->
+
+	<!-- modArmorCoolingMesh -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorCoolingMesh']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorCoolingMesh']/@modifier_tags">modArmorCoolingMesh</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorCoolingMesh']/@blocked_tags">noMods</set>
-	
-	<!-- Improved Fittings -->
+
+	<!-- modArmorImprovedFittings -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/@modifier_tags">modArmorImprovedFittings</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/@blocked_tags">noMods</set>
-	
-	<!-- Customised Fittings -->
+
+	<!-- modArmorCustomizedFittings -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/@modifier_tags">modArmorCustomizedFittings</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/@blocked_tags">noMods</set>
-	
-	<!-- Light Plating -->
+
+	<!-- modArmorPlatingBasic -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/@modifier_tags">modArmorPlatingBasic</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/@blocked_tags">noMods</set>
-	
-	<!-- Heavy Plating -->
+
+	<!-- modArmorPlatingReinforced -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/@modifier_tags">modArmorPlatingReinforced</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/@blocked_tags">noMods</set>
-	
-	<!-- Extra Pocket x1 -->
+
+	<!-- modArmorStoragePocket -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorStoragePocket']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorStoragePocket']/@modifier_tags">modArmorStoragePocket</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorStoragePocket']/@blocked_tags">noMods</set>
-	
-	<!-- Extra Pocket x2 -->
+
+	<!-- modArmorDoubleStoragePocket -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorDoubleStoragePocket']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorDoubleStoragePocket']/@modifier_tags">modArmorDoubleStoragePocket</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorDoubleStoragePocket']/@blocked_tags">noMods</set>
-	
-	<!-- Extra Pocket x3 -->
+
+	<!-- modArmorTripleStoragePocket -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorTripleStoragePocket']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorTripleStoragePocket']/@modifier_tags">modArmorTripleStoragePocket</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorTripleStoragePocket']/@blocked_tags">noMods</set>
-	
-	<!-- Muffled Connectors -->
+
+	<!-- modArmorQuadStoragePocket -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorQuadStoragePocket']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorQuadStoragePocket']/@modifier_tags">modArmorQuadStoragePocket</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorQuadStoragePocket']/@blocked_tags">noMods</set>
+
+	<!-- modArmorMuffledConnectors -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorMuffledConnectors']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorMuffledConnectors']/@modifier_tags">modArmorMuffledConnectors</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorMuffledConnectors']/@blocked_tags">noMods</set>
-	
-	<!-- Muffled Connectors Advanced -->
+
+	<!-- modArmorAdvancedMuffledConnectors -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorAdvancedMuffledConnectors']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorAdvancedMuffledConnectors']/@modifier_tags">modArmorAdvancedMuffledConnectors</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorAdvancedMuffledConnectors']/@blocked_tags">noMods</set>
-	
-	<!-- Impact Bracing -->
+
+	<!-- modArmorImpactBracing -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/@modifier_tags">modArmorImpactBracing</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/@blocked_tags">noMods</set>
-	
-	<!-- Water Purifier -->
+
+	<!-- modArmorStealthBoots -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStealthBoots']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStealthBoots']/@modifier_tags">modArmorStealthBoots</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStealthBoots']/@blocked_tags">noMods</set>
+
+	<!-- modArmorWaterPurifier -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorWaterPurifier']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorWaterPurifier']/@modifier_tags">modArmorWaterPurifier</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorWaterPurifier']/@blocked_tags">noMods</set>
-	
-	<!-- Helmet Light -->
+
+	<!-- modArmorHelmetLight -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/@modifier_tags">modArmorHelmetLight</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/@blocked_tags">noMods</set>
-	
-<!-- Clothing -->
 
-	<!-- Extra Pocket x1 -->
-	<set xpath="/item_modifiers/item_modifier[@name='modClothingStoragePocket']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modClothingStoragePocket']/@modifier_tags">modClothingStoragePocket</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modClothingStoragePocket']/@blocked_tags">noMods</set>
-	
-	<!-- Extra Pocket x2 -->
-	<set xpath="/item_modifiers/item_modifier[@name='modClothingCargoStoragePocket']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modClothingCargoStoragePocket']/@modifier_tags">modClothingCargoStoragePocket</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modClothingCargoStoragePocket']/@blocked_tags">noMods</set>
-	
-<!-- Vehicle Mods -->
+	<!-- modArmorCigar -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/@modifier_tags">modArmorCigar</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/@blocked_tags">noMods</set>
 
-	<!-- Vehicle Mega -->
+	<!-- modArmorPerception -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/@modifier_tags">modArmorPerception</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/@blocked_tags">noMods</set>
+
+	<!-- modArmorStrength -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStrength']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStrength']/@modifier_tags">modArmorStrength</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStrength']/@blocked_tags">noMods</set>
+
+	<!-- modArmorFortitude -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']/@modifier_tags">modArmorFortitude</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']/@blocked_tags">noMods</set>
+
+	<!-- modArmorAgility -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAgility']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAgility']/@modifier_tags">modArmorAgility</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAgility']/@blocked_tags">noMods</set>
+
+	<!-- modArmorIntellect -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/@modifier_tags">modArmorIntellect</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/@blocked_tags">noMods</set>
+
+	<!-- modArmorTreasureHunter -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']/@modifier_tags">modArmorTreasureHunter</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']/@blocked_tags">noMods</set>
+
+	<!-- modArmorNightVision -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/@modifier_tags">modArmorNightVision</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/@blocked_tags">noMods</set>
+
+	<!-- modVehicleMega -->
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleMega']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleMega']/@modifier_tags">modVehicleMega</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleMega']/@blocked_tags">noMods</set>
-	
-	<!-- Fuel Saver -->
+
+	<!-- modVehicleFuelSaver -->
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']/@modifier_tags">modVehicleFuelSaver</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']/@blocked_tags">noMods</set>
-	
-	<!-- Off-road Lights -->
+
+	<!-- modVehicleOffRoadHeadlights -->
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleOffRoadHeadlights']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleOffRoadHeadlights']/@modifier_tags">modVehicleOffRoadHeadlights</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleOffRoadHeadlights']/@blocked_tags">noMods</set>
-	
-	<!-- Supercharger -->
+
+	<!-- modVehicleSuperCharger -->
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleSuperCharger']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleSuperCharger']/@modifier_tags">modVehicleSuperCharger</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleSuperCharger']/@blocked_tags">noMods</set>
-	
-	<!-- Expanded Seat -->
+
+	<!-- modVehicleExpandedSeat -->
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']/@modifier_tags">modVehicleExpandedSeat</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']/@blocked_tags">noMods</set>
-	
-	<!-- Expanded Seat -->
-	<set xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']/@modifier_tags">modVehicleExpandedSeat</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']/@blocked_tags">noMods</set>
-	
-	<!-- Reserve Fuel Tank -->
+
+	<!-- modVehicleReserveFuelTank -->
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleReserveFuelTank']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleReserveFuelTank']/@modifier_tags">modVehicleReserveFuelTank</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleReserveFuelTank']/@blocked_tags">noMods</set>
-	
-<!-- Robotic Drone -->
 
-	<!-- Armour Plating -->
+	<!-- modVehiclePlow -->
+	<set xpath="/item_modifiers/item_modifier[@name='modVehiclePlow']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modVehiclePlow']/@modifier_tags">modVehiclePlow</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modVehiclePlow']/@blocked_tags">noMods</set>
+
+	<!-- modVehicleArmor -->
+	<set xpath="/item_modifiers/item_modifier[@name='modVehicleArmor']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modVehicleArmor']/@modifier_tags">modVehicleArmor</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modVehicleArmor']/@blocked_tags">noMods</set>
+
+	<!-- modRoboticDroneArmorPlatingMod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneArmorPlatingMod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneArmorPlatingMod']/@modifier_tags">modRoboticDroneArmorPlatingMod</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneArmorPlatingMod']/@blocked_tags">noMods</set>
-	
-	<!-- Cargo -->
+
+	<!-- modRoboticDroneCargoMod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneCargoMod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneCargoMod']/@modifier_tags">modRoboticDroneCargoMod</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneCargoMod']/@blocked_tags">noMods</set>
-	
-	<!-- Morale Booster -->
+
+	<!-- modRoboticDroneMoraleBoosterMod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMoraleBoosterMod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMoraleBoosterMod']/@modifier_tags">modRoboticDroneMoraleBoosterMod</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMoraleBoosterMod']/@blocked_tags">noMods</set>
-	
-	<!-- Headlamp -->
+
+	<!-- modRoboticDroneHeadlampMod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneHeadlampMod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneHeadlampMod']/@modifier_tags">modRoboticDroneHeadlampMod</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneHeadlampMod']/@blocked_tags">noMods</set>
-	
-	<!-- Medic -->
+
+	<!-- modRoboticDroneMedicMod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMedicMod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMedicMod']/@modifier_tags">modRoboticDroneMedicMod</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMedicMod']/@blocked_tags">noMods</set>
-	
-	<!-- Weapon -->
+
+	<!-- modRoboticDroneWeaponMod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneWeaponMod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneWeaponMod']/@modifier_tags">modRoboticDroneWeaponMod</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneWeaponMod']/@blocked_tags">noMods</set>
-	
-	<!-- Stun Weapon -->
+
+	<!-- modRoboticDroneStunWeaponMod -->
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneStunWeaponMod']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneStunWeaponMod']/@modifier_tags">modRoboticDroneStunWeaponMod</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneStunWeaponMod']/@blocked_tags">noMods</set>
+
+	<!-- modGunButtkick3000 -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunButtkick3000']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunButtkick3000']/@modifier_tags">modGunButtkick3000</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunButtkick3000']/@blocked_tags">noMods</set>
+
+	<!-- modGunButtkick4000 -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunButtkick4000']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunButtkick4000']/@modifier_tags">modGunButtkick4000</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunButtkick4000']/@blocked_tags">noMods</set>
+
+	<!-- modMeleeGunToolDecapitizer -->
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeGunToolDecapitizer']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeGunToolDecapitizer']/@modifier_tags">modMeleeGunToolDecapitizer</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeGunToolDecapitizer']/@blocked_tags">noMods</set>
+
+	<!-- modArmorJumpJets -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorJumpJets']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorJumpJets']/@modifier_tags">modArmorJumpJets</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorJumpJets']/@blocked_tags">noMods</set>
+
+	<!-- modGunBowAdminArcheryReloadRecovery -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunBowAdminArcheryReloadRecovery']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunBowAdminArcheryReloadRecovery']/@modifier_tags">modGunBowAdminArcheryReloadRecovery</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modGunBowAdminArcheryReloadRecovery']/@blocked_tags">noMods</set>
+
+	<!-- modArmorAdminToughGuyShirt -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAdminToughGuyShirt']/@installable_tags">gun,barrelAttachments,turretRanged,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,firingMode,bottomAttachments,stock,shotgun,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine,ranged,perkArchery,bow,weapon,tool,perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster,knife,machete,light,medium,heavy,turretMelee,melee,club,longShaft,perkElectrocutioner,motorTool,armorChest,armorLegs,armor,armorFeet,armorHead,head,pocketMod,clothing,vehicle,drone,vengine,vlight,vseat,vfuel</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAdminToughGuyShirt']/@modifier_tags">modArmorAdminToughGuyShirt</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAdminToughGuyShirt']/@blocked_tags">noMods</set>
 
 </configs>
